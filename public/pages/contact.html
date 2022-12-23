@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bare - TailwindCSS</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <!-- Core theme TailwindCSS-->
+    <link rel="stylesheet" href="../css/output.css" />
+    <!-- Core theme CSS-->
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <!-- If you want to change the primary color from green to something else. Change it with the tailwind.config.js in the Project Root Folder -->
+
+  <body class="bg-gray-100">
+    <!-- Responsive navbar-->
+    <nav
+      class="flex flex-col sm:flex-row flex-wrap md:items-center px-4 md:px-5 lg:px-16 py-2 justify-between fixed top-0 z-20 w-full backdrop-filter backdrop-blur-md bg-white bg-opacity-70"
+    >
+      <div
+        class="flex items-center justify-between sm:justify-around gap-x-2 text-white"
+      >
+        <!-- Link To Direct to Home Page -->
+        <!-- This can be a logo or a simple text (or both). Just write it in-between the anchor tag below-->
+        <a href="#!" class="py-1 flex items-center text-2xl text-slate-700">
+          <b class="text-slate-900">Im</b>perial
+        </a>
+
+        <!-- Hamburger -->
+        <button
+          class="sm:hidden cursor-pointer flex flex-col justify-center gap-y-1"
+          id="hamburger"
+          aria-label="menu"
+        >
+          <div class="w-6 h-1 rounded-lg bg-slate-700 bar duration-300"></div>
+          <div class="w-4 h-1 rounded-lg bg-slate-700 bar duration-300"></div>
+          <div class="w-6 h-1 rounded-lg bg-slate-700 bar duration-300"></div>
+        </button>
+      </div>
+
+      <ul
+        class="hidden sm:flex justify-end font-poppins items-center gap-x-7 gap-y-5 tracking-wide mt-5 sm:mt-0 text-black"
+        id="links"
+      >
+        <li class="table-caption mb-5 sm:mb-0">
+          <a href="/index.html" class="hover:text-gray-300">Home</a>
+        </li>
+        <li class="table-caption mb-5 sm:mb-0">
+          <a href="./public/pages/About.html" class="hover:text-gray-300"
+            >About</a
+          >
+        </li>
+        <li class="mb-5 sm:mb-0 mx-0">
+          <a href="./public/pages/contact.html" class="hover:text-gray-300"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Please let this <main></main> tag cover everything in your webpage except the navbar. This enables the navbar links to disappear when the outer parts is clicked. -->
+    <!-- If you have a better way of doing this without including the <main> tag. Kindly submit a pull request at https://github.com/abrahamebij/tailwind-boilerplate -->
+    <main>
+      <!-- Page Content -->
+      <section
+        class="sm:pb-20 sm:pt-20 pt-1 justify-between mx-5 sm:flex md:mx-10 font-poppins"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.5057185671253!2d110.84027259707796!3d-7.680645316425624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a3c702d1e07e3%3A0xfcfafe4d3bf644f0!2sQ-lise%20Photography!5e0!3m2!1sid!2sid!4v1671707328750!5m2!1sid!2sid"
+          width="400"
+          height="250"
+          class="shadow-lg w-80 mt-4 md:w-2/5 h-96 mx-8 md:mx-3"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="mt-10">
+          <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl">
+            Hubungi Kami Melalui
+          </h1>
+          <!-- component -->
+          <a href="">
+            <div
+              class="flex items-start rounded-xl bg-white p-4 shadow-lg my-3 hover:bg-slate-100"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-full border border-green-100 bg-green-50"
+              >
+                <i class="bi bi-whatsapp text-4xl text-green-400"></i>
+              </div>
+
+              <div class="ml-4">
+                <h2 class="font-semibold text-lg font-poppins mt-2">
+                  Whatsapp Admin
+                </h2>
+              </div>
+            </div></a
+          >
+
+          <a href=""
+            ><div
+              class="flex items-start rounded-xl bg-white p-4 shadow-lg my-3 hover:bg-slate-100"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-full border border-red-100 bg-red-50"
+              >
+                <i class="bi bi-instagram text-3xl text-red-400"></i>
+              </div>
+
+              <div class="ml-4">
+                <h2 class="font-semibold text-lg font-poppins mt-2">
+                  Instagram
+                </h2>
+              </div>
+            </div></a
+          >
+
+          <a href=""
+            ><div
+              class="flex items-start rounded-xl bg-white p-4 shadow-lg my-3 hover:bg-slate-100"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-full border border-orange-100 bg-orange-50"
+              >
+                <i class="bi bi-envelope-at text-3xl text-orange-400"></i>
+              </div>
+
+              <div class="ml-4">
+                <h2 class="font-semibold text-lg font-poppins mt-2">
+                  Email Admin
+                </h2>
+              </div>
+            </div></a
+          >
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-slate-900 pb-3 text-white">
+        <!-- Sub Footer -->
+        <div
+          class="h-1 w-full bg-gradient-to-r from-primary-color to-green-500"
+        ></div>
+        <!-- Copyright -->
+        <p class="text-center font-poppins mt-8 mb-4 font-semibold px-2">
+          Imperial Wedding Planner - Copyright &copy; <span id="year"></span>.
+          All Rights Reserved
+        </p>
+      </footer>
+    </main>
+
+    <!-- Core Navbar JS-->
+    <script src="../js/navbar.js"></script>
+    <!-- Core theme JS-->
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
