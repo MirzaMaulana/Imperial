@@ -28,6 +28,15 @@
 
   <!-- If you want to change the primary color from green to something else. Change it with the tailwind.config.js in the Project Root Folder -->
   <body class="bg-gray-100">
+    <!-- loading -->
+    <div id="loading" class="grid min-h-screen place-content-center">
+      <div class="flex items-center gap-2 text-gray-500">
+        <span
+          class="h-6 w-6 block rounded-full border-4 border-t-black animate-spin"
+        ></span>
+        loading...
+      </div>
+    </div>
     <!-- Responsive navbar-->
     <nav
       class="flex flex-col sm:flex-row flex-wrap md:items-center px-4 md:px-5 lg:px-16 py-2 justify-between fixed top-0 z-20 w-full backdrop-filter backdrop-blur-md bg-white bg-opacity-70"
