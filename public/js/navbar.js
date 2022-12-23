@@ -9,9 +9,9 @@ hamburger.addEventListener("click", changeMenuState); // When hamburger is click
 // When one of the links is clicked, the links disappear
 let link = document.querySelectorAll("ul#links > *");
 for (let i = 0; i < link.length; i++) {
-	let allLinks = link[i];
-	allLinks.addEventListener("click", hideLinks);
-	allLinks.addEventListener("click", removeActive);
+  let allLinks = link[i];
+  allLinks.addEventListener("click", hideLinks);
+  allLinks.addEventListener("click", removeActive);
 }
 
 // When the outer part of the hamburger menu is clicked the links disappear
@@ -20,20 +20,20 @@ main.addEventListener("click", removeActive);
 
 // Function Components
 function hideLinks() {
-	if (links.classList.contains("hidden")) {
-		links.classList.remove("hidden");
-	} else {
-		links.classList.add("hidden");
-	}
+  if (links.classList.contains("hidden")) {
+    links.classList.remove("hidden");
+  } else {
+    links.classList.add("hidden");
+  }
 }
 function hideLinksOnly() {
-	if (links.classList.contains("hidden") === false) {
-		links.classList.add("hidden");
-	}
+  if (links.classList.contains("hidden") === false) {
+    links.classList.add("hidden");
+  }
 }
 function changeMenuState() {
-	hamburger.classList.toggle("active");
+  hamburger.classList.toggle("active");
 }
 function removeActive() {
-	hamburger.classList.remove("active");
+  hamburger.classList.remove("active");
 }
